@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the metadata_display_lsu feature.
+ */
+
+include_once 'metadata_display_lsu.features.inc';
