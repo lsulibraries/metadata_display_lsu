@@ -77,10 +77,10 @@ function metadata_display_lsu_islandora_solr_metadata_configurations_default_fie
       ),
       'mods_subject_topic_authority_loc_ms' => array(
         'solr_field' => 'mods_subject_topic_authority_loc_ms',
-        'data' => 'a:3:{s:13:"display_label";s:7:"Subject";s:9:"hyperlink";i:0;s:10:"truncation";a:5:{s:15:"truncation_type";s:21:"separate_value_option";s:10:"max_length";i:0;s:9:"word_safe";i:0;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";i:1;}}',
+        'data' => 'a:3:{s:13:"display_label";s:7:"Subject";s:9:"hyperlink";i:1;s:10:"truncation";a:5:{s:15:"truncation_type";s:21:"separate_value_option";s:10:"max_length";s:1:"0";s:9:"word_safe";i:0;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";s:1:"1";}}',
         'weight' => 3,
         'display_label' => 'Subject',
-        'hyperlink' => 0,
+        'hyperlink' => 1,
         'truncation' => array(
           'truncation_type' => 'separate_value_option',
           'max_length' => 0,
@@ -206,6 +206,34 @@ function metadata_display_lsu_islandora_solr_metadata_configurations_default_fie
         'data' => 'a:3:{s:13:"display_label";s:20:"Use and Reproduction";s:9:"hyperlink";i:0;s:10:"truncation";a:5:{s:15:"truncation_type";s:21:"separate_value_option";s:10:"max_length";i:0;s:9:"word_safe";i:0;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";i:1;}}',
         'weight' => 12,
         'display_label' => 'Use and Reproduction',
+        'hyperlink' => 0,
+        'truncation' => array(
+          'truncation_type' => 'separate_value_option',
+          'max_length' => 0,
+          'word_safe' => 0,
+          'ellipsis' => 0,
+          'min_wordsafe_length' => 1,
+        ),
+      ),
+      'RELS_EXT_info:fedora/fedora-system:def/relations-external#isMemberOfCollection_uri_ms' => array(
+        'solr_field' => 'RELS_EXT_info:fedora/fedora-system:def/relations-external#isMemberOfCollection_uri_ms',
+        'data' => 'a:3:{s:13:"display_label";s:11:"Member of: ";s:9:"hyperlink";i:1;s:10:"truncation";a:5:{s:15:"truncation_type";s:18:"whole_field_option";s:10:"max_length";s:1:"0";s:9:"word_safe";i:1;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";s:1:"1";}}',
+        'weight' => 13,
+        'display_label' => 'Member of: ',
+        'hyperlink' => 1,
+        'truncation' => array(
+          'truncation_type' => 'whole_field_option',
+          'max_length' => 0,
+          'word_safe' => 1,
+          'ellipsis' => 0,
+          'min_wordsafe_length' => 1,
+        ),
+      ),
+      'fgs_lastModifiedDate_dt' => array(
+        'solr_field' => 'fgs_lastModifiedDate_dt',
+        'data' => 'a:3:{s:13:"display_label";s:14:"Last Modified:";s:9:"hyperlink";i:0;s:10:"truncation";a:5:{s:15:"truncation_type";s:21:"separate_value_option";s:10:"max_length";s:1:"0";s:9:"word_safe";i:0;s:8:"ellipsis";i:0;s:19:"min_wordsafe_length";s:1:"1";}}',
+        'weight' => 14,
+        'display_label' => 'Last Modified:',
         'hyperlink' => 0,
         'truncation' => array(
           'truncation_type' => 'separate_value_option',
